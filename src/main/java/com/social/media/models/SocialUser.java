@@ -10,4 +10,9 @@ public class SocialUser {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
+
+
+    //This helps to implement bidirectional from social profile
+    @OneToOne
+    private SocialProfile socialProfile;
 }
