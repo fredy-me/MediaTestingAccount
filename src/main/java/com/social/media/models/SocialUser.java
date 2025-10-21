@@ -14,5 +14,6 @@ public class SocialUser {
 
     //This helps to implement bidirectional from social profile
     @OneToOne
-    private SocialProfile socialProfile;
+    @JoinColumn(name = "social_profile_id")
+    private SocialProfile socialProfile;// This will be a foreign key in this Entity and the Primary from Social Profile
 }
