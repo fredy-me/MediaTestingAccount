@@ -11,7 +11,7 @@ public class SocialProfile {
 
     //This annotation for One-to-One relation on Single
     // class used as One-to-One relation after implemented to another class will change and Be Bidirectional relation
-    @OneToOne
-    @JoinColumn(name = "social_user")
+    @OneToOne(mappedBy = "socialProfile")
+//    @JoinColumn(name = "social_user_id")
     private SocialUser user;
 }
